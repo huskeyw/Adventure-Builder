@@ -1,0 +1,22 @@
+{
+  "intro": "this is a example game, in this game you must try and kill the goblin, and get the gem, you win when you drop the gem in the main foyer",
+  "rooms": [
+    { "id": 0, "name": "The Grand Foyer", "desc": "You are standing in a massive circular hall. Passages lead in all four cardinal directions. A spiral staircase goes UP, and a dark trapdoor leads DOWN.", "n": 1, "s": 2, "e": 3, "w": 4, "u": 5, "d": 6 },
+    { "id": 1, "name": "North Hall", "desc": "A cold northern hallway. The foyer is south.", "s": 0 },
+    { "id": 2, "name": "South Garden", "desc": "A beautiful indoor garden. The foyer is north.", "n": 0 },
+    { "id": 3, "name": "East Armory", "desc": "Racks of rusty weapons line the walls. The foyer is west.", "w": 0 },
+    { "id": 4, "name": "West Library", "desc": "Bookshelves surround you. The foyer is east.", "e": 0 },
+    { "id": 5, "name": "The Tower", "desc": "You are at the top of the stairs. The wind howls. The only way is down.", "d": 0 },
+    { "id": 6, "name": "The Dungeon", "desc": "It is damp and terrifying down here. A ladder leads up.", "u": 0 }
+  ],
+  "items": [
+    { "id": 0, "name": "LAMP", "desc": "A rusty brass lantern.", "loc": 0, "type": 0, "stat": 0, "is_quest": 0 },
+    { "id": 1, "name": "SWORD", "desc": "A heavy iron broadsword.", "loc": 3, "type": 1, "stat": 6, "is_quest": 1 },
+    { "id": 2, "name": "GEM", "desc": "A sparkling ruby.", "loc": 2, "type": 2, "stat": 50, "is_quest": 1 },
+    { "id": 3, "name": "POTION", "desc": "A glass flask filled with glowing red liquid.", "loc": 1, "type": 3, "stat": 15, "is_quest": 0 }
+  ],
+  "actors": [
+    { "id": 0, "name": "GOBLIN", "desc": "A nasty, green-skinned goblin clutching a dagger.", "loc": 6, "hp": 10, "dmg": 3, "is_quest": 1 },
+    { "id": 1, "name": "GUARD", "desc": "A sleepy castle guard leaning against the wall.", "loc": 1, "hp": 20, "dmg": 5, "is_quest": 0 }
+  ]
+}
